@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse sitem em varios dispositivos diferentes, ou aumente e dimiua o tamanho de seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+<audio preload="metadata" src="midia/bumbum.mp3" controls loop ></audio>
+<br>
+<audio preload="metadata">
+    <source src="midia/dutumob.mp3" type="audio/mpeg">
+    <source src="midia/dutumob.ogg" type="audio/ogg">
+    <source src="midia/dutumob.wav" type="audio/wav">
+</audio>
+<p>Infelizmente do seu navegador não consegue reproduzir áudio, por favor click <a href="midia/dutumob.mp3" >aqui</a> para baixar</p>
+
+
+    
+</body>
+</html>
